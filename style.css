@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+body:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(168, 184, 199);
+    border-radius: 0 0 35% 35%;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul li{
+    display:inline-block ;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li h1{
+    cursor: default;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #0f1114;
+    font-weight: 800;
+} 
+nav ul li a:hover{
+    color: #2140f1;
+}
+nav i{
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    color: aliceblue;
+    align-items: center;
+    font-size: 2vw;
+    padding: 85px 5%;
+}
+.left h1{
+    color: #000;
+    margin: 20px 4px;
+}
+.left p{
+    margin: 20px 4px;
+    color: #383469;
+}
+.left a{
+    background: #2c2863;
+    padding: 2px 40px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 45px;
+    border-radius: 35px;
+}
+.right{
+    height: 100%;
+    width: 50%;
+}
+.right img{
+    width: 34%;
+    height: 50%;
+    position: absolute;
+    bottom: 150px;
+    right: 50px;
+}
+
+
+@media (max-width:600px) {
+    nav{
+        padding: 0 5vw;
+        height: 60px;
+        background-color: aqua;
+    }
+    nav ul li{
+        font-size: 6vw;
+    }
+    nav ul li a{
+        display: none;
+    }
+    nav ul li h1{
+        font-size: 25px;
+    }
+    nav i{
+        display: block;
+        font-size: 6vw;
+    }
+    .right img{
+        width: 40%;
+        height: 35%;
+        position: absolute;
+        bottom: 182px;
+        right: 24px;
+    }
+    .left{
+        height: 100%;
+        width: 50%;
+        color: aliceblue;
+        align-items: center;
+        font-size: 2vw;
+        padding: 85px 5%;
+    }
+    .left h1{
+        color: #000;
+        margin: 6px 6px;
+        font-size: 28px;
+}
+    .left p{
+        margin: 18px 10px;
+        color: #383469;
+        font-size: 17px;
+    }
+    .left a{
+        background: #2c2863;
+        padding: 5px 48px;
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        margin: 12px 5px;
+        border-radius: 35px;
+    }
+}
